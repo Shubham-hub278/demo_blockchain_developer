@@ -1,0 +1,20 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: learning-network.com
+    Specs:
+      - Hostname: orderer
+PeerOrgs:
+ - Name: teacher
+   Domain: teacher.learning-network.com
+   EnableNodeOUs: true
+   Template:
+      Count: 2
+   Users:
+      Count: 1
+ - Name: student
+   Domain: student.learning-network.com
+   EnableNodeOUs: true
+   Template:
+      Count: 2
+   Users:
+      Count: 1
